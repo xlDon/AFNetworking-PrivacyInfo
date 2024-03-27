@@ -54,5 +54,8 @@ Pod::Spec.new do |s|
     ss.source_files = 'UIKit+AFNetworking'
   end
 
-  s.source_files = 'AFNetworking/Resources/PrivacyInfo.xcprivacy'
+  s.subspec 'Resources' do |ss|
+    ss.source_files = 'AFNetworking/Resources/PrivacyInfo.xcprivacy'
+  end
+
 end
